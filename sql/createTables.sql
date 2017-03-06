@@ -1,6 +1,5 @@
 create database time_table;
 use time_table;
-
 CREATE TABLE IF NOT EXISTS `_SessionSqlStore` (
 	`id` VARCHAR(300) NOT NULL PRIMARY KEY,
 	`data` TEXT,
