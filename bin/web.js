@@ -21,7 +21,6 @@ var server = http.createServer(web);
 function setup() {
     web.set('view engine', 'jade');
     web.use("/bower_components", express.static("bower_components"));
-    web.use("/public", lessMiddleware('public'));
     web.use("/public", express.static("public"));
     web.locals.pretty = true;
 
