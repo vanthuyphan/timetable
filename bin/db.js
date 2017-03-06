@@ -98,7 +98,6 @@ function getCourses(rows) {
         if (keys.indexOf(row.code) == -1) {
             courses.push(row)
             keys.push(row.code)
-            console.log(row.code)
         }
     }
     return courses;
