@@ -18,6 +18,14 @@ CREATE TABLE IF NOT EXISTS `User` (
 	PRIMARY KEY (`code`)
 ) ENGINE MyISAM DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+CREATE TABLE IF NOT EXISTS `Course` (
+	`code` BIGINT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(200),
+	`description` VARCHAR(200),
+	`credits` INT,
+	PRIMARY KEY (`code`)
+) ENGINE MyISAM DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 CREATE TABLE IF NOT EXISTS `Class` (
 	`code` BIGINT NOT NULL AUTO_INCREMENT,
 	`courseCode` BIGINT,
@@ -26,14 +34,6 @@ CREATE TABLE IF NOT EXISTS `Class` (
 	`endTime` TIMESTAMP,
 	PRIMARY KEY (`code`),
 	FOREIGN KEY (courseCode) REFERENCES Course(code)
-) ENGINE MyISAM DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-CREATE TABLE IF NOT EXISTS `Course` (
-	`code` BIGINT NOT NULL AUTO_INCREMENT,
-	`name` VARCHAR(200),
-	`description` VARCHAR(200),
-	`credits` INT,
-	PRIMARY KEY (`code`)
 ) ENGINE MyISAM DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 INSERT INTO `User` VALUES (1, 'v4n', 'van@gmail.com', 'Van Phan', 'pppppp', '', 0);
