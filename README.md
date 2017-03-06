@@ -13,11 +13,11 @@ node claz_manager.js
 
 #Demo
 http://138.197.115.82
-Student accounts:
+*Student accounts:
 * van@gmail.com/pppppp
 * van2@gmail.com/pppppp
 * van3@gmail.com/pppppp
-Admin account:
+* Admin account:
 * admin@gmail.com/pppppp
 
 
