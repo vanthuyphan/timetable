@@ -3,7 +3,6 @@ var web = express();
 var fs = require("fs");
 var http = require('http');
 var https = require('https');
-var lessMiddleware = require('less-middleware');
 
 var SessionSqlStore = require("./now/SessionSqlStore");
 var session = require('express-session');
